@@ -1,9 +1,9 @@
-package pl.edu.pw.mini.po.fourth.mail.letter;
+package pl.edu.pw.mini.po.fourth.mail.components.letter;
 
 public class NormalLetter extends Letter {
 	
-	public NormalLetter(String text) {
-		super(text);
+	public NormalLetter(String text, Address address) {
+		super(text, address);
 	}
 	public String getAuthor() {
 		return "Maciek";
