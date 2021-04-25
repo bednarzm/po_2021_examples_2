@@ -1,9 +1,9 @@
-package pl.edu.pw.mini.po.eight;
+package pl.edu.pw.mini.po.eight.collections.lists;
 
 import java.util.Date;
 import java.util.Random;
 
-public class Person {
+public class Person implements Comparable<Person>{
 
 	private int id; 
 	private String name;
@@ -52,11 +52,6 @@ public class Person {
 	}
 
 	*/
-
-	
-
-	
-	
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -69,5 +64,14 @@ public class Person {
 
 		return result;
 	}
-	
+
+	public String getSurname() {
+		return surname;
+	}
+
+	@Override
+	public int compareTo(Person o) {
+		return surname.compareTo(o.surname);
+	}
+
 }
